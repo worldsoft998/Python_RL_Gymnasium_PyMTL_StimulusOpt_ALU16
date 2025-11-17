@@ -101,7 +101,6 @@ alu_rl_repo_professional/
 
 If you'd like, I can now:
 - add a CI script,
-- convert the architecture diagram into PNG,
 - add richer functional coverage and a coverage collection script,
 - or produce a pre-built run on your target environment (with specific VCS flags).
 
