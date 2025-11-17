@@ -1,0 +1,7 @@
+pymtl3
+gymnasium
+stable-baselines3
+numpy
+pandas
+tqdm
+torch

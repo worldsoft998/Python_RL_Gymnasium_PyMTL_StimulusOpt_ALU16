@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <style>
+    .box { fill:#f5f7ff; stroke:#2c3e50; stroke-width:1.5; rx:8; }
+    .title { font: bold 14px sans-serif; fill:#2c3e50; }
+    .txt { font: 12px sans-serif; fill:#2c3e50; }
+    .arrow { stroke:#2c3e50; stroke-width:1.2; marker-end:url(#arr); fill:none; }
+  </style>
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <!-- Python block -->
+  <rect x="20" y="40" width="260" height="120" class="box"/>
+  <text x="30" y="60" class="title">Python (Training)</text>
+  <text x="30" y="84" class="txt">PyMTL3 ALU model</text>
+  <text x="30" y="102" class="txt">Gymnasium environment</text>
+  <text x="30" y="120" class="txt">stable-baselines3 (PPO)</text>
+
+  <!-- Export -->
+  <rect x="320" y="40" width="220" height="80" class="box"/>
+  <text x="330" y="60" class="title">Export</text>
+  <text x="330" y="84" class="txt">CSV vectors (op,a,b)</text>
+
+  <!-- SV/UVM -->
+  <rect x="600" y="40" width="260" height="160" class="box"/>
+  <text x="610" y="60" class="title">SystemVerilog / UVM</text>
+  <text x="610" y="86" class="txt">UVM TB (driver/monitor/scoreboard)</text>
+  <text x="610" y="104" class="txt">DUT: 16-bit ALU</text>
+  <text x="610" y="122" class="txt">Coverage & checks</text>
+
+  <!-- arrows -->
+  <path d="M280,100 L320,100" class="arrow"/>
+  <path d="M540,100 L600,100" class="arrow"/>
+
+  <!-- Bottom: replay -->
+  <rect x="320" y="170" width="540" height="120" class="box"/>
+  <text x="330" y="190" class="title">Replay & Analysis</text>
+  <text x="330" y="214" class="txt">VCS run replays CSV via UVM file_seq</text>
+  <text x="330" y="232" class="txt">Coverage comparison: RL vs Random</text>
+  <text x="330" y="250" class="txt">Reports / waveforms / logs</text>
+</svg>
